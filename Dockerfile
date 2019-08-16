@@ -31,7 +31,7 @@ RUN apk update && apk --no-cache add \
 
 # Build binaries and move them to /dist/lib
 RUN cd /root \
-    && wget http://old.openzwave.com/downloads/openzwave-1.4.1.tar.gz \
+    && wget http://old.openzwave.com/downloads/openzwave-1.6.878.tar.gz \
     && tar zxvf openzwave-*.gz \
     && cd openzwave-* && make && make install \
     && mkdir -p /dist/lib \
